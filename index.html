@@ -1,6 +1,100 @@
 <!DOCTYPE html>
-<html>
-  <body>
-    <H1>Hello World</H1>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Professional Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            overflow: auto;
+            padding: 0.5em;
+            text-align: center;
+        }
+        nav button {
+            background-color: #666;
+            color: white;
+            border: none;
+            padding: 0.5em 1em;
+            margin: 0.25em;
+            cursor: pointer;
+        }
+        nav button:hover {
+            background-color: #888;
+        }
+        section {
+            padding: 2em;
+            background: white;
+            margin: 1em auto;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        h3 {
+            color: #555;
+            margin-left: 1em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Professional Portfolio</h1>
+</header>
+
+<nav>
+    <button onclick="scrollToSection('introduction')">Introduction</button>
+    <button onclick="scrollToSection('self-assessment')">Professional Self-Assessment</button>
+    <button onclick="scrollToSection('code-review')">Code Review</button>
+    <button onclick="scrollToSection('project-enhancements')">Project Enhance-ments</button>
+</nav>
+
+<section id="introduction">
+    <h2>Introduction</h2>
+    <p><!-- Your introductory content here --></p>
+</section>
+
+<section id="self-assessment">
+    <h2>Professional Self-Assessment</h2>
+    <p><!-- Your self-assessment content here --></p>
+</section>
+
+<section id="code-review">
+    <h2>Code Review</h2>
+    <p><!-- Your code review discussion here --></p>
+</section>
+
+<section id="project-enhancements">
+    <h2>Project Enhancements</h2>
+    <h3>Software Design and Engineering</h3>
+    <p><!-- Details on software design improvements --></p>
+
+    <h3>Algorithms and Data Structure</h3>
+    <p><!-- Details on algorithms and data structures --></p>
+
+    <h3>Databases</h3>
+    <p><!-- Details on database integration or improvement --></p>
+</section>
+
+<script>
+    function scrollToSection(id) {
+        document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+</body>
 </html>
